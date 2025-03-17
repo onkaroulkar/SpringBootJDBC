@@ -20,6 +20,6 @@ public class SpringJdbcApplication {
 		StudentService service = context.getBean(StudentService.class);
 		service.addStudent(s);
 		List<Student> student = service.getStudent();
+		System.out.println(student);
 	}
-
 }
